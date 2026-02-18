@@ -1,0 +1,27 @@
+version: 1
+disable_existing_loggers: False
+
+#formatter
+formatters:
+  simple:
+    format: "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+    #2026-02-14 15:30:01 | INFO | src.data_loader | Data loaded successfully
+    
+#console handler
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: simple
+    level: INFO
+#file handler
+  file:
+    class: logging.FileHandler
+    formatter: simple
+    filename: logs/training.log
+    level: INFO
+
+loggers:
+  root:
+    handlers: [console, file]
+    level: INFO
+

@@ -1,0 +1,30 @@
+# config.yaml
+
+data:
+  raw_file: "data/raw/HR_Job_Placement_Dataset.csv"
+  process_file: "data/processed/processed_dataset.csv"
+  save_to_postgres: true
+
+plots:
+  show_plots: true
+  save_plots: true
+  eda_dir: "eda_plots"
+  fe_dir: "fe_plots"
+
+model:
+  random_forest:
+    n_estimators: 300
+    max_depth: 20
+    min_samples_split: 10
+    max_features: "sqrt"
+    random_state: 42
+    class_weight: "balanced"
+
+split:
+  test_size: 0.2
+  random_state: 42
+
+
+logging:
+  log_dir: logs
+  log_file: training.log
