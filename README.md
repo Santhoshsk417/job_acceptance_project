@@ -1,3 +1,16 @@
+# Job Acceptance Prediction ML Pipeline
+End-to-end machine learning pipeline to predict HR job acceptance using Python, Random Forest, and feature engineering. Includes data preprocessing, exploratory analysis, model training, evaluation, and inference.
+# Project Overview
+This project implements a complete workflow to predict whether a candidate will accept a job offer.  
+The pipeline includes:
+
+- Data cleaning and preprocessing  
+- Feature engineering  
+- Exploratory Data Analysis (EDA) with visualizations  
+- Model training using **Random Forest classifier**  
+- Model evaluation and inference
+## Project Structure
+
 hr-job-placement-ml/
 │
 ├── config/
@@ -72,4 +85,17 @@ hr-job-placement-ml/
 ├── main.py                  # Orchestrates full pipeline
 ├── requirements.txt
 └── README.md
+## Dependencies
 
+- Python 
+- Pandas, NumPy  
+- Scikit-learn  
+- Matplotlib, Seaborn  
+- uv for dependency management
+
+## How to Run
+
+Install dependencies:
+
+uv sync
+uv run python main.py
